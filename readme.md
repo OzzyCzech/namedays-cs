@@ -6,7 +6,7 @@
 [![Last Commit](https://img.shields.io/github/last-commit/OzzyCzech/namedays-cs?style=for-the-badge)](https://github.com/OzzyCzech/namedays-cs/commits/main)
 [![GitHub Workflow Status](https://img.shields.io/github/actions/workflow/status/OzzyCzech/namedays-cs/main.yml?style=for-the-badge)](https://github.com/OzzyCzech/namedays-cs/actions)
 
-Super simple library to get Czech name days (`jmeniny`) for a given date.
+Simple library to get Czech name days (`jmeniny`, `svátek`) for a given date.
 
 ## Functions
 
