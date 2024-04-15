@@ -10,9 +10,9 @@
     "czech republic",
     "name day",
     "namedays",
-    "české svátky",
     "jmeniny",
-    "svátky"
+    "české svátky",
+    "svátek"
   ],
   "type": "module",
   "exports": {

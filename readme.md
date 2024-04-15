@@ -46,6 +46,10 @@ getNameDay(date); // '' (empty string)
 getNameDayArray(date); // [] (empty array)
 ```
 
+## Credits
+
+- [Name Days in the Czech Republic](https://en.wikipedia.org/wiki/Name_days_in_the_Czech_Republic)
+
 ## License
 
 MIT
