@@ -35,7 +35,7 @@ getNameDay(date, ', '); // Adam, Eva
 getNameDayArray(date); // ['Adam', 'Eva']
 ```
 
-It's possible that there are no name days for a given date:
+It is possible that there are no name days for a given date:
 
 ```javascript
 import {getNameDay, getNameDayArray} from 'namedays-cs';
