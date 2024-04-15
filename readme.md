@@ -18,7 +18,7 @@ import * as namedays from 'namedays-cs';
 
 ## Name days
 
-There are basically two functions for getting name days.
+There are basically two functions to get getting name days.
 The first one returns a **string** of name days separated by
 `a` letter. The second one returns an **array** of name days.
 
