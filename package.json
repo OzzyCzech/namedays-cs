@@ -1,0 +1,56 @@
+{
+  "name": "namedays-cs",
+  "version": "0.0.1",
+  "author": "Roman Ožana <roman@ozana.cz> (https://ozana.cz)",
+  "repository": "git@github.com:OzzyCzech/holidays-cs.git",
+  "license": "MIT",
+  "description": "Czech name days",
+  "keywords": [
+    "czechia",
+    "czech republic",
+    "name day",
+    "namedays",
+    "české svátky",
+    "jmeniny",
+    "svátky"
+  ],
+  "type": "module",
+  "exports": {
+    "types": "./dist/index.d.ts",
+    "default": "./dist/index.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "ava": "NODE_OPTIONS='--import=tsx/esm' ava",
+    "xo": "xo",
+    "test": "xo && tsc --noEmit && NODE_OPTIONS='--import=tsx/esm' ava"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "devDependencies": {
+    "@types/node": "^20.12.7",
+    "ava": "^6.1.2",
+    "tsx": "^4.7.2",
+    "typescript": "^5.4.5",
+    "xo": "^0.58.0"
+  },
+  "ava": {
+    "extensions": {
+      "ts": "module"
+    },
+    "files": [
+      "test/*"
+    ],
+    "workerThreads": false,
+    "nodeArguments": [
+      "--experimental-json-modules",
+      "--no-warnings"
+    ]
+  }
+}
