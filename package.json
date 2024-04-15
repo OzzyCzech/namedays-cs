@@ -24,6 +24,7 @@
     "build": "tsc",
     "ava": "NODE_OPTIONS='--import=tsx/esm' ava",
     "xo": "xo",
+    "release": "np",
     "test": "xo && tsc --noEmit && NODE_OPTIONS='--import=tsx/esm' ava"
   },
   "engines": {
@@ -37,6 +38,7 @@
   "devDependencies": {
     "@types/node": "^20.12.7",
     "ava": "^6.1.2",
+    "np": "^10.0.3",
     "tsx": "^4.7.2",
     "typescript": "^5.4.5",
     "xo": "^0.58.0"
