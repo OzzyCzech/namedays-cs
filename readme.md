@@ -48,7 +48,7 @@ getNameDayArray(date); // [] (empty array)
 
 ## Credits
 
-- [Name Days in the Czech Republic](https://en.wikipedia.org/wiki/Name_days_in_the_Czech_Republic)
+- [Jmeniny v Česku](https://cs.wikipedia.org/wiki/Jmeniny_v_%C4%8Cesku)
 
 ## License
 
