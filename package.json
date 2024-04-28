@@ -21,11 +21,12 @@
     "default": "./dist/index.js"
   },
   "scripts": {
-    "build": "tsc",
+    "build": "rm -rf dist && tsc",
+    "release": "np --no-release-draft --preview",
+    "prepare": "npm run build",
+    "test": "xo && tsc --noEmit && NODE_OPTIONS='--import=tsx/esm' ava",
     "ava": "NODE_OPTIONS='--import=tsx/esm' ava",
-    "xo": "xo",
-    "release": "tsc && np --no-release-draft",
-    "test": "xo && tsc --noEmit && NODE_OPTIONS='--import=tsx/esm' ava"
+    "xo": "xo"
   },
   "engines": {
     "node": ">=20"
