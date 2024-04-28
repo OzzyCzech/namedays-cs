@@ -24,7 +24,7 @@
     "build": "tsc",
     "ava": "NODE_OPTIONS='--import=tsx/esm' ava",
     "xo": "xo",
-    "release": "np --no-release-draft",
+    "release": "tsc && np --no-release-draft",
     "test": "xo && tsc --noEmit && NODE_OPTIONS='--import=tsx/esm' ava"
   },
   "engines": {
