@@ -22,7 +22,7 @@
   },
   "scripts": {
     "build": "rm -rf dist && tsc",
-    "release": "np --no-release-draft --preview",
+    "release": "np --no-release-draft",
     "prepare": "npm run build",
     "test": "xo && tsc --noEmit && NODE_OPTIONS='--import=tsx/esm' ava",
     "ava": "NODE_OPTIONS='--import=tsx/esm' ava",
