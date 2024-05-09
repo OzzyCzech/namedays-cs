@@ -1,4 +1,4 @@
-import data from './names.json' assert {type: 'json'};
+import data from './names.json';
 
 const names = data as Record<string, string[]>;
 
