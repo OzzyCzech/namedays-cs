@@ -1,4 +1,4 @@
-import data from './names.json';
+import data from './names.json' with {type: 'json'};
 
 const names = data as Record<string, string[]>;
 
