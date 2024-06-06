@@ -10,29 +10,25 @@ Simple library to get Czech name days (`jmeniny`, `svátek`) for a given date.
 
 ## Functions
 
-All functions are available in the main module. You can import them like this:
+You can import the whole module or just specific functions:
 
 ```javascript
 import * as namedays from 'namedays-cs';
+import {getNameDay} from 'namedays-cs';
 ```
 
-## Name days
+## Getting Name Days
 
-There are basically two functions to get getting name days.
-The first one returns a **string** of name days separated by
-`a` letter. The second one returns an **array** of name days.
+You can get name days for a given date:
 
 ```javascript
-import {getNameDay, getNameDayArray} from 'namedays-cs';
+import {getNameDay} from 'namedays-cs';
 
 const date = new Date(2024, 11, 24); // 24. december 2024
 
-// String of name days
-getNameDay(date); // Adam a Eva
-getNameDay(date, ', '); // Adam, Eva
-
-// Array of name days
-getNameDayArray(date); // ['Adam', 'Eva']
+// Get name days for a given date
+getNameDay(date); // ['Adam', 'Eva']
+getNameDay(date).join(' a '); // Adam a Eva
 ```
 
 It is possible that there are no name days for a given date:
@@ -42,8 +38,7 @@ import {getNameDay, getNameDayArray} from 'namedays-cs';
 
 const date = new Date(2024, 11, 25); // 25. december 2024
 
-getNameDay(date); // '' (empty string)
-getNameDayArray(date); // [] (empty array)
+getNameDay(date); // [] (empty array)
 ```
 
 ## Credits
