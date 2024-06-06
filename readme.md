@@ -34,7 +34,7 @@ getNameDay(date).join(' a '); // Adam a Eva
 It is possible that there are no name days for a given date:
 
 ```javascript
-import {getNameDay, getNameDayArray} from 'namedays-cs';
+import {getNameDay} from 'namedays-cs';
 
 const date = new Date(2024, 11, 25); // 25. december 2024
 
