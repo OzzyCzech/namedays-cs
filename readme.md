@@ -47,4 +47,4 @@ getNameDay(date); // [] (empty array)
 
 ## License
 
-MIT
+[MIT](./LICENSE)
