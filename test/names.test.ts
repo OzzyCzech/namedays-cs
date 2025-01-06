@@ -15,7 +15,7 @@ function fromIso(date: string): Date {
 	return new Date(year, month - 1, day);
 }
 
-describe("Name Day Tests", () => {
+describe("Test base days", () => {
 	it("Check Štěpánka name", () => {
 		const date = fromIso("2024-10-31");
 		expect(getNameDay(date)).toEqual(["Štěpánka"]);
@@ -27,11 +27,6 @@ describe("Name Day Tests", () => {
 		expect(getNameDay(date)).toEqual(["Zdeněk"]);
 	});
 
-	it("Check Adam, Eva names", () => {
-		const date = fromIso("2024-12-24");
-		expect(getNameDay(date)).toEqual(["Adam", "Eva"]);
-	});
-
 	it("Check Horymír at leap year", () => {
 		const date = fromIso("2024-02-29");
 		expect(getNameDay(date)).toEqual(["Horymír"]);
@@ -40,6 +35,13 @@ describe("Name Day Tests", () => {
 	it("Check Tobiáš at All Souls Day", () => {
 		const date = fromIso("2024-11-02");
 		expect(getNameDay(date)).toEqual(["Tobiáš"]);
+	});
+});
+
+describe("Name days with multiple names", () => {
+	it("Check Adam, Eva names", () => {
+		const date = fromIso("2024-12-24");
+		expect(getNameDay(date)).toEqual(["Adam", "Eva"]);
 	});
 
 	it("Check Jidáš and Alfréd at Independence Day", () => {
@@ -53,7 +55,9 @@ describe("Name Day Tests", () => {
 	it("Three Kings' Day - Kašpar, Melichar, Baltazar", () => {
 		expect(getNameDay(fromIso("2024-01-06"))).toEqual(["Kašpar", "Melichar", "Baltazar"]);
 	});
+});
 
+describe("Name days without names", () => {
 	it("Check days without names", () => {
 		// New Year's Day
 		expect(getNameDay(fromIso("2024-01-01"))).toEqual([]);
