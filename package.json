@@ -1,45 +1,36 @@
 {
-  "name": "namedays-cs",
-  "version": "0.1.12",
-  "author": "Roman Ožana <roman@ozana.cz> (https://ozana.cz)",
-  "repository": "OzzyCzech/namedays-cs",
-  "license": "MIT",
-  "description": "Simple library to get Czech name days (jmeniny, svátek) for a given date.",
-  "keywords": [
-    "czechia",
-    "czech republic",
-    "czech language",
-    "name day",
-    "namedays",
-    "jmeniny",
-    "české svátky",
-    "svátek"
-  ],
-  "type": "module",
-  "exports": {
-    "types": "./dist/index.d.ts",
-    "default": "./dist/index.js"
-  },
-  "scripts": {
-    "build": "rm -rf dist && tsc",
-    "release": "np",
-    "prepare": "npm run build",
-    "test": "xo && tsc --noEmit && vitest"
-  },
-  "engines": {
-    "node": ">=20"
-  },
-  "main": "dist/index.js",
-  "types": "dist/index.d.ts",
-  "files": [
-    "dist"
-  ],
-  "devDependencies": {
-    "@types/node": "^22.7.9",
-    "np": "^10.0.7",
-    "tsx": "^4.19.1",
-    "typescript": "^5.6.3",
-    "vitest": "^2.1.8",
-    "xo": "^0.59.3"
-  }
+	"name": "namedays-cs",
+	"version": "0.1.12",
+	"author": "Roman Ožana <roman@ozana.cz> (https://ozana.cz)",
+	"repository": "OzzyCzech/namedays-cs",
+	"license": "MIT",
+	"description": "Simple library to get Czech name days (jmeniny, svátek) for a given date.",
+	"keywords": ["czechia", "czech republic", "czech language", "name day", "namedays", "jmeniny", "české svátky", "svátek"],
+	"type": "module",
+	"exports": {
+		"types": "./dist/index.d.ts",
+		"default": "./dist/index.js"
+	},
+	"scripts": {
+		"build": "rm -rf dist && tsc",
+		"release": "np",
+		"prepare": "npm run build",
+		"test": "xo && tsc --noEmit && vitest",
+		"format": "biome format --write",
+		"lint": "biome lint"
+	},
+	"engines": {
+		"node": ">=20"
+	},
+	"main": "dist/index.js",
+	"types": "dist/index.d.ts",
+	"files": ["dist"],
+	"devDependencies": {
+		"@biomejs/biome": "^1.9.4",
+		"@types/node": "^22.7.9",
+		"np": "^10.0.7",
+		"tsx": "^4.19.1",
+		"typescript": "^5.6.3",
+		"vitest": "^2.1.8"
+	}
 }

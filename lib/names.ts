@@ -1,4 +1,4 @@
-import data from './names.json' with {type: 'json'};
+import data from "./names.json" with { type: "json" };
 
 const names = data as Record<string, string[]>;
 
@@ -7,6 +7,6 @@ const names = data as Record<string, string[]>;
  * @param date
  */
 export function getNameDay(date: Date): string[] {
-	const key = `${(date.getMonth() + 1).toString().padStart(2, '0')}-${(date.getDate()).toString().padStart(2, '0')}`;
+	const key = `${(date.getMonth() + 1).toString().padStart(2, "0")}-${date.getDate().toString().padStart(2, "0")}`;
 	return names[key] ?? [];
 }
