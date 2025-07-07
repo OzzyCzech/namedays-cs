@@ -25,8 +25,8 @@
 		"release": "np",
 		"prepare": "npm run build",
 		"test": "tsc --noEmit && vitest",
-		"format": "biome format --write",
-		"lint": "biome lint"
+		"format": "biome check --write .",
+		"format:check": "biome check ."
 	},
 	"engines": {
 		"node": ">=20"
@@ -37,11 +37,11 @@
 		"dist"
 	],
 	"devDependencies": {
-		"@biomejs/biome": "^1.9.4",
-		"@types/node": "^22.15.30",
+		"@biomejs/biome": "^2.0.6",
+		"@types/node": "^24.0.10",
 		"np": "^10.2.0",
-		"tsx": "^4.19.4",
+		"tsx": "^4.20.3",
 		"typescript": "^5.8.3",
-		"vitest": "^3.2.2"
+		"vitest": "^3.2.4"
 	}
 }
