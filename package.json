@@ -26,7 +26,8 @@
 		"prepare": "npm run build",
 		"test": "tsc --noEmit && vitest",
 		"format": "biome check --write .",
-		"format:check": "biome check ."
+		"format:check": "biome check .",
+		"docs": "typedoc"
 	},
 	"engines": {
 		"node": ">=20"
@@ -38,9 +39,11 @@
 	],
 	"devDependencies": {
 		"@biomejs/biome": "^2.2.0",
+		"@ozzyczech/tsconfig": "^1.0.0",
 		"@types/node": "^24.3.0",
 		"np": "^10.2.0",
 		"tsx": "^4.20.4",
+		"typedoc": "^0.28.10",
 		"typescript": "^5.9.2",
 		"vitest": "^3.2.4"
 	}
