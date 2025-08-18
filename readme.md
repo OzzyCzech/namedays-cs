@@ -48,3 +48,5 @@ getNameDay(date); // [] (empty array)
 ## License
 
 [MIT](./LICENSE)
+
+Made with ❤️ by the [Roman Ožana](https://ozana.cz)     
