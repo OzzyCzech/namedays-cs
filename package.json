@@ -38,13 +38,13 @@
 		"dist"
 	],
 	"devDependencies": {
-		"@biomejs/biome": "^2.2.3",
+		"@biomejs/biome": "^2.2.5",
 		"@ozzyczech/tsconfig": "^1.0.0",
-		"@types/node": "^24.3.1",
+		"@types/node": "^24.7.0",
 		"np": "^10.2.0",
-		"tsx": "^4.20.5",
-		"typedoc": "^0.28.12",
-		"typescript": "^5.9.2",
+		"tsx": "^4.20.6",
+		"typedoc": "^0.28.13",
+		"typescript": "^5.9.3",
 		"vitest": "^3.2.4"
 	}
 }
