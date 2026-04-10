@@ -21,7 +21,7 @@
 		"default": "./dist/index.js"
 	},
 	"scripts": {
-		"build": "rm -rf dist && tsc",
+		"build": "rm -rf dist tsconfig.tsbuildinfo && tsc",
 		"release": "npm publish --provenance",
 		"prepare": "npm run build",
 		"test": "tsc --noEmit && vitest",
