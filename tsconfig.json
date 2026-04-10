@@ -1,7 +1,9 @@
 {
 	"extends": "@ozzyczech/tsconfig",
 	"compilerOptions": {
-		"resolveJsonModule": true
+		"resolveJsonModule": true,
+		"moduleResolution": "bundler",
+		"rootDir": "./lib"
 	},
 	"include": ["lib/**/*"]
 }
