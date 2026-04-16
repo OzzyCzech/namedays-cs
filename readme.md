@@ -48,9 +48,10 @@ You can find when a person has their name day:
 ```javascript
 import {getDateByName} from 'namedays-cs';
 
-getDateByName('Roman'); // '05-22'
-getDateByName('roman'); // '05-22' (case-insensitive)
-getDateByName('Božetěcha'); // null - old name, no longer used
+getDateByName('Roman'); // ['08-09']
+getDateByName('roman'); // ['08-09'] (case-insensitive)
+getDateByName('Petr'); // ['02-22', '06-29'] (multiple dates)
+getDateByName('Božetěcha'); // [] (not found)
 ```
 
 ## Credits
