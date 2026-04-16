@@ -36,6 +36,11 @@ describe("Test base days", () => {
 		const date = fromIso("2024-11-02");
 		expect(getNameDay(date)).toEqual(["Tobiáš"]);
 	});
+
+	it("Check Irena and Bernadeta names", () => {
+		const date = fromIso("2024-04-16");
+		expect(getNameDay(date)).toEqual(["Irena", "Bernadeta"]);
+	});
 });
 
 describe("Name days with multiple names", () => {
