@@ -1,6 +1,6 @@
 import { describe, expect, it } from "vitest";
-import data from "../lib/names.json" with { type: "json" };
 import { getDateByName, getNameDay } from "../lib";
+import data from "../lib/names.json" with { type: "json" };
 
 describe("Test base days", () => {
 	it("Check Štěpánka name", () => {
@@ -76,7 +76,7 @@ describe("Name days without names", () => {
 });
 
 describe("Data completeness", () => {
-	const daysInMonth = [31, 29, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31];
+	const daysInMonth: Record<number, number> = { 1: 31, 2: 29, 3: 31, 4: 30, 5: 31, 6: 30, 7: 31, 8: 31, 9: 30, 10: 31, 11: 30, 12: 31 };
 	const emptyDays = ["01-01", "05-01", "05-08", "07-06", "12-25"];
 
 	it("should have 361 entries (366 days minus 5 holidays)", () => {
@@ -85,7 +85,7 @@ describe("Data completeness", () => {
 
 	it("should cover every day of the year (excluding known holidays)", () => {
 		for (let m = 1; m <= 12; m++) {
-			for (let d = 1; d <= daysInMonth[m - 1]!; d++) {
+			for (let d = 1; d <= daysInMonth[m]; d++) {
 				const key = `${String(m).padStart(2, "0")}-${String(d).padStart(2, "0")}`;
 				if (emptyDays.includes(key)) {
 					expect(data).not.toHaveProperty(key);
