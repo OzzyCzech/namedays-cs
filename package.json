@@ -27,12 +27,12 @@
 		"default": "./dist/index.js"
 	},
 	"scripts": {
-		"build": "rm -rf dist tsconfig.tsbuildinfo && tsc",
+		"build": "rm -rf dist && tsc",
+		"typedoc": "typedoc",
 		"prepare": "pnpm run build",
 		"test": "tsc --noEmit && vitest",
 		"format": "biome check --write .",
-		"format:check": "biome check .",
-		"build:docs": "typedoc"
+		"format:check": "biome check ."
 	},
 	"engines": {
 		"node": ">=22"

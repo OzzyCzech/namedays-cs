@@ -25,14 +25,14 @@ jobs:
       - name: Setup Node
         uses: actions/setup-node@v6
         with:
-          node-version: "24"
+          node-version: "25"
           cache: pnpm
 
       - name: Install dependencies
         run: pnpm install --frozen-lockfile
 
-      - name: Build
-        run: pnpm build:docs
+      - name: Build docs
+        run: pnpm typedoc
 
       - name: Setup Pages
         uses: actions/configure-pages@v6
