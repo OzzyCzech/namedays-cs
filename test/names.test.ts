@@ -1,5 +1,5 @@
 import { describe, expect, it } from "vitest";
-import { getNameDay } from "../lib";
+import { getDateByName, getNameDay } from "../lib";
 
 /**
  * Convert ISO date string to Date object
@@ -54,6 +54,26 @@ describe("Name days with multiple names", () => {
 
 	it("Three Kings' Day - Kašpar, Melichar, Baltazar", () => {
 		expect(getNameDay(fromIso("2024-01-06"))).toEqual(["Kašpar", "Melichar", "Baltazar"]);
+	});
+});
+
+describe("Get date by name", () => {
+	it("Find date for a single name", () => {
+		expect(getDateByName("Štěpánka")).toBe("10-31");
+	});
+
+	it("Case insensitive lookup", () => {
+		expect(getDateByName("štěpánka")).toBe("10-31");
+		expect(getDateByName("ADAM")).toBe("12-24");
+	});
+
+	it("Return null for unknown name", () => {
+		expect(getDateByName("Neexistující")).toBeNull();
+	});
+
+	it("Find date for names sharing a day", () => {
+		expect(getDateByName("Adam")).toBe("12-24");
+		expect(getDateByName("Eva")).toBe("12-24");
 	});
 });
 

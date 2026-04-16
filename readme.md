@@ -41,6 +41,18 @@ const date = new Date(2024, 11, 25); // 25. december 2024
 getNameDay(date); // [] (empty array)
 ```
 
+## Finding Date by Name
+
+You can find when a person has their name day:
+
+```javascript
+import {getDateByName} from 'namedays-cs';
+
+getDateByName('Roman'); // '05-22'
+getDateByName('roman'); // '05-22' (case-insensitive)
+getDateByName('Neexistující'); // null
+```
+
 ## Credits
 
 - [Jmeniny v Česku](https://cs.wikipedia.org/wiki/Jmeniny_v_%C4%8Cesku)
