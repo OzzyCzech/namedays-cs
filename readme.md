@@ -50,7 +50,7 @@ import {getDateByName} from 'namedays-cs';
 
 getDateByName('Roman'); // '05-22'
 getDateByName('roman'); // '05-22' (case-insensitive)
-getDateByName('Neexistující'); // null
+getDateByName('Božetěcha'); // null - old name, no longer used
 ```
 
 ## Credits
