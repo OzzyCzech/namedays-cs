@@ -32,7 +32,7 @@
 		"test": "tsc --noEmit && vitest",
 		"format": "biome check --write .",
 		"format:check": "biome check .",
-		"build:docs": "typedoc"
+		"docs": "typedoc"
 	},
 	"engines": {
 		"node": ">=22"
