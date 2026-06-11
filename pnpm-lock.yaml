@@ -16,8 +16,8 @@ importers:
         specifier: ^2.4.16
         version: 2.4.16
       '@ozzyczech/tsconfig':
-        specifier: ^2.0.0
-        version: 2.0.0
+        specifier: ^2.1.0
+        version: 2.1.0
       '@types/node':
         specifier: ^25.9.3
         version: 25.9.3
@@ -270,8 +270,8 @@ packages:
   '@oxc-project/types@0.124.0':
     resolution: {integrity: sha512-VBFWMTBvHxS11Z5Lvlr3IWgrwhMTXV+Md+EQF0Xf60+wAdsGFTBx7X7K/hP4pi8N7dcm1RvcHwDxZ16Qx8keUg==}
 
-  '@ozzyczech/tsconfig@2.0.0':
-    resolution: {integrity: sha512-AvFjtFd8KA5OogIgG9+PJ4mhrRY3eiICWByRWrjFaEAJGSowubNvq04uginoHpoISb43xWqdcvQh4Za52EuyRA==}
+  '@ozzyczech/tsconfig@2.1.0':
+    resolution: {integrity: sha512-L32Qt7eKzrQspK9IuNIkDOBdYVjF+B/kn5jAtHQRL8ObwMIDiZSlf+Y2NKi9M1D96dbCv0tYd2cnWqDM4UzNEw==}
     engines: {node: '>=24'}
 
   '@rolldown/binding-android-arm64@1.0.0-rc.15':
@@ -928,7 +928,7 @@ snapshots:
 
   '@oxc-project/types@0.124.0': {}
 
-  '@ozzyczech/tsconfig@2.0.0': {}
+  '@ozzyczech/tsconfig@2.1.0': {}
 
   '@rolldown/binding-android-arm64@1.0.0-rc.15':
     optional: true

@@ -1,6 +1,6 @@
 {
 	"name": "namedays-cs",
-	"version": "1.2.0",
+	"version": "1.2.1",
 	"author": "Roman Ožana <roman@ozana.cz> (https://ozana.cz)",
 	"repository": {
 		"type": "git",
@@ -45,7 +45,7 @@
 	],
 	"devDependencies": {
 		"@biomejs/biome": "^2.4.16",
-		"@ozzyczech/tsconfig": "^2.0.0",
+		"@ozzyczech/tsconfig": "^2.1.0",
 		"@types/node": "^25.9.3",
 		"typedoc": "^0.28.19",
 		"typescript": "^6.0.3",
