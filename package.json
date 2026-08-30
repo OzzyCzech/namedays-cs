@@ -35,20 +35,20 @@
 		"format:check": "biome check ."
 	},
 	"engines": {
-		"node": ">=22"
+		"node": ">=24"
 	},
-	"packageManager": "pnpm@11.5.3",
+	"packageManager": "pnpm@11.24.0",
 	"main": "dist/index.js",
 	"types": "dist/index.d.ts",
 	"files": [
 		"dist"
 	],
 	"devDependencies": {
-		"@biomejs/biome": "^2.4.16",
+		"@biomejs/biome": "^2.5.11",
 		"@ozzyczech/tsconfig": "^2.1.0",
-		"@types/node": "^25.9.3",
-		"typedoc": "^0.28.19",
+		"@types/node": "^26.4.0",
+		"typedoc": "^0.28.20",
 		"typescript": "^6.0.3",
-		"vitest": "^4.1.8"
+		"vitest": "^4.1.11"
 	}
 }
