@@ -44,11 +44,11 @@
 		"dist"
 	],
 	"devDependencies": {
-		"@biomejs/biome": "^2.5.11",
+		"@biomejs/biome": "^2.5.13",
 		"@ozzyczech/tsconfig": "^2.1.0",
-		"@types/node": "^26.4.0",
+		"@types/node": "^26.5.1",
 		"typedoc": "^0.28.20",
 		"typescript": "^6.0.3",
-		"vitest": "^4.1.11"
+		"vitest": "^5.0.0"
 	}
 }
